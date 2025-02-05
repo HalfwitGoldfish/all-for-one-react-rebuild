@@ -13,6 +13,6 @@
  Responsiveness (mobile, tablet, desktop)
  YOU MUST HAVE DATA VALIDATION COMPLETED
 
-*Reviewers Name*: 
+*Reviewers Name*:Chris Wells-Hott
 
-*Peer Review*: 
+*Peer Review*: It works good maybe add a validation for when the user submits a empty an input,Other than that good work.
