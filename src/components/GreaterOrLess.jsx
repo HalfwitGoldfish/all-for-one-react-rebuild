@@ -11,8 +11,14 @@ const GreaterOrLess = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await greaterOrLessFetch( num1Input, num2Input ) );
+        if ( num1Input.length === 0 || num2Input.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await greaterOrLessFetch( num1Input, num2Input ) );
+        }
     }
 
     return (

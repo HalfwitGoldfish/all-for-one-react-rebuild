@@ -11,8 +11,14 @@ const AskingQuestions = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await askingQuestionsFetch( nameInput, timeInput ) );
+        if ( nameInput.length === 0 || timeInput.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await askingQuestionsFetch( nameInput, timeInput ) );
+        }
     }
 
     return (

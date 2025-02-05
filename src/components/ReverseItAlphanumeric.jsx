@@ -10,8 +10,14 @@ const ReverseItAlphanumeric = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await reverseItAlphanumericFetch( stringInput ) );
+        if ( stringInput.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await reverseItAlphanumericFetch( stringInput ) );
+        }
     }
 
     return (

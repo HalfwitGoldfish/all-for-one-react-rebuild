@@ -10,8 +10,14 @@ const Magic8Ball = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await magic8BallFetch( questionInput ) );
+        if ( questionInput.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await magic8BallFetch( questionInput ) );
+        }
     }
 
     return (

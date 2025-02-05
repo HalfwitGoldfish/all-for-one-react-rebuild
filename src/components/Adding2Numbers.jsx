@@ -11,8 +11,14 @@ const Adding2Numbers = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await adding2NumsFetch( num1Input, num2Input ) );
+        if ( num1Input.length === 0 || num2Input.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await adding2NumsFetch( num1Input, num2Input ) );
+        }
     }
 
     return (

@@ -10,8 +10,14 @@ const RestaurantPicker = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await restaurantPickerFetch( typeInput ) );
+        if ( typeInput.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await restaurantPickerFetch( typeInput ) );
+        }
     }
 
     return (

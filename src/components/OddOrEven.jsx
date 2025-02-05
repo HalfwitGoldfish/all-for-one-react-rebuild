@@ -10,8 +10,14 @@ const OddOrEven = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await oddOrEvenFetch( numInput ) );
+        if ( numInput.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await oddOrEvenFetch( numInput ) );
+        }
     }
 
     return (

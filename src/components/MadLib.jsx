@@ -19,8 +19,14 @@ const MadLib = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await madLibFetch( animalInput, nameInput, foodInput, toyInput, ageInput, animal2Input, name2Input, food2Input, toy2Input, age2Input ) );
+        if ( animalInput.length === 0 || nameInput.length === 0 || foodInput.length === 0 || toyInput.length === 0 || ageInput.length === 0 || animal2Input.length === 0 || name2Input.length === 0 || food2Input.length === 0 || toy2Input.length === 0 || age2Input.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await madLibFetch( animalInput, nameInput, foodInput, toyInput, ageInput, animal2Input, name2Input, food2Input, toy2Input, age2Input ) );
+        }
     }
 
     return (

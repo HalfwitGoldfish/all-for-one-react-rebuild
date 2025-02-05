@@ -10,8 +10,14 @@ const SayHello = () =>
 
     const SolutionButton = async () =>
     {
-        setCondition( false );
-        setBoxText( await sayHelloFetch( nameInput ) );
+        if ( nameInput.length === 0 )
+        {
+            setCondition( true );
+        }else
+        {
+            setCondition( false );
+            setBoxText( await sayHelloFetch( nameInput ) );
+        }
     }
 
     return (
