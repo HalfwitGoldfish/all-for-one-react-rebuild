@@ -57,7 +57,7 @@ const MadLib = () =>
                 <div className="row-start-4 min-[905px]:row-start-5">
                     <div className="flex justify-center">
                         <div className="text-white grid justify-evenly gap-[5px] overflow-y-auto max-[905px]:h-auto min-[905px]:gap-[10px]">
-                            <div className="text-white flex justify-center mb-[4px] max-[905px]:grid min-[905px]:col-span-2 min-[905px]:row-start-6 min-[905px]:mx-[15px]">
+                            <div className="text-white flex justify-center mb-[4px] max-[905px]:grid min-[905px]:col-span-2 min-[905px]:row-start-6">
                                 <button onClick={SolutionButton} className="w-[170px] min-[905px]:w-[600px] h-[70px] bg-black/60 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[48px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
                                     <p>Press!</p>
                                 </button>
