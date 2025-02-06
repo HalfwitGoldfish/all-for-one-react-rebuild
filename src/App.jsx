@@ -20,7 +20,7 @@ const App = () =>
     }
 
   return (
-    <div className="h-[100vh] bg-[url('/src/assets/SolarSystem.jpg')] bg-no-repeat bg-cover m-0 max-[720px]:bg-center">
+    <div className="h-[100vh] bg-[url('/public/assets/SolarSystem.jpg')] bg-no-repeat bg-cover m-0 max-[720px]:bg-center">
       <div className="grid">
         <div className="flex min-[720px]:row-start-1">
 

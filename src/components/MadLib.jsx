@@ -30,7 +30,7 @@ const MadLib = () =>
     }
 
     return (
-        <div className="bg-[url('/src/assets/Mars.jpg')] bg-no-repeat bg-cover m-0">
+        <div className="bg-[url('/public/assets/Mars.jpg')] bg-no-repeat bg-cover m-0">
             <div className="h-[100vh] grid grid-rows-9">
                 <div className="grid">
                     <div className="-row-start-1">
