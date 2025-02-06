@@ -47,7 +47,7 @@ const AskingQuestions = () =>
                 </div>
 
                 <div className="row-start-7 max-[905px]:row-start-6">
-                    <div className="text-white flex justify-center max-[905px]:grid">
+                    <div className="text-white flex justify-center max-[905px]:grid max-[905px]:gap-[5px]">
                         <div className="flex justify-center max-[905px]:row-start-2 max-[905px]:col-start-1">
                             <input
                                 className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
