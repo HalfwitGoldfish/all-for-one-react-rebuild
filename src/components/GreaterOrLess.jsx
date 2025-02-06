@@ -22,7 +22,7 @@ const GreaterOrLess = () =>
     }
 
     return (
-        <div className="bg-[url('/public/assets/Earth.jpg')] bg-no-repeat bg-cover m-0">
+        <div className="bg-[url('/assets/Earth.jpg')] bg-no-repeat bg-cover bg-center m-0">
             <div className="h-[100vh] grid grid-rows-9">
                 <div className="grid">
                     <div className="-row-start-1">
@@ -39,8 +39,8 @@ const GreaterOrLess = () =>
                 </div>
 
                 <div className="row-start-5 flex justify-center max-[905px]:row-start-4">
-                    <div className={`text-white bg-black/60 w-[277px] h-[98px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 overflow-y-auto ${condition ? "hidden" : ""}`}>
-                        <div className="font-bold text-[20px] text-center mt-[15px]">
+                    <div className={`text-white bg-black/60 w-[277px] h-[150px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 overflow-y-auto ${condition ? "hidden" : ""}`}>
+                        <div className="font-bold text-[20px] text-center mt-[15px] flex justify-center">
                             <p className="m-[10px]">{boxText}</p>
                         </div>
                     </div>
@@ -56,12 +56,12 @@ const GreaterOrLess = () =>
                                 onChange={ (event) => setNum1Input(event.target.value) }
                             />
                         </div>
-                        <div className="max-[905px]:col-start-2 max-[560px]:col-start-1 max-[905px]:row-start-1">
+                        <div className="max-[905px]:col-start-1 max-[905px]:row-start-1">
                             <button onClick={SolutionButton} className="w-[170px] h-[70px] bg-black/60 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[48px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer ml-[80px] mr-[80px]">
                                 <p>Press!</p>
                             </button>
                         </div>
-                        <div className="flex justify-center max-[905]:row-start-2 max-[905px]:col-start-1">
+                        <div className="flex justify-center max-[905]:row-start-3 max-[905px]:col-start-1">
                             <input
                                 className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
                                 placeholder="Input Second Number"

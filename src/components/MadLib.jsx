@@ -30,8 +30,8 @@ const MadLib = () =>
     }
 
     return (
-        <div className="bg-[url('/public/assets/Mars.jpg')] bg-no-repeat bg-cover m-0">
-            <div className="h-[100vh] grid grid-rows-9">
+        <div className="bg-[url('/assets/Mars.jpg')] bg-no-repeat bg-cover bg-center m-0">
+            <div className="h-[100vh] max-[905px]:h-[150vh] grid grid-rows-9">
                 <div className="grid">
                     <div className="-row-start-1">
                         <Link to="/">
@@ -46,78 +46,78 @@ const MadLib = () =>
                     </div>
                 </div>
 
-                <div className="row-start-3 flex justify-center">
-                    <div className={`text-white bg-black/60 w-[400px] h-[148px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 overflow-y-auto ${condition ? "hidden" : ""}`}>
-                        <div className="font-bold text-[20px] text-center mt-[15px]">
+                <div className="row-start-2 flex justify-center">
+                    <div className={`text-white bg-black/60 w-[400px] h-[250px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 overflow-y-auto ${condition ? "hidden" : ""}`}>
+                        <div className="font-bold text-[20px] text-center mt-[15px] flex justify-center">
                             <p className="m-[10px]">{boxText}</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="row-start-5">
-                    <div className="text-white flex justify-center mb-[4px] max-[905px]:grid">
-                        <button onClick={SolutionButton} className="w-[170px] h-[70px] bg-black/60 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[48px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
-                            <p>Press!</p>
-                        </button>
-                    </div>
+                <div className="row-start-4 min-[905px]:row-start-5">
                     <div className="flex justify-center">
-                        <div className="text-white grid justify-evenly gap-[5px] overflow-y-auto h-[220px] w-[300px]">
+                        <div className="text-white grid justify-evenly gap-[5px] overflow-y-auto max-[905px]:h-auto min-[905px]:gap-[10px]">
+                            <div className="text-white flex justify-center mb-[4px] max-[905px]:grid min-[905px]:col-span-2 min-[905px]:row-start-6 min-[905px]:mx-[15px]">
+                                <button onClick={SolutionButton} className="w-[170px] min-[905px]:w-[600px] h-[70px] bg-black/60 rounded-[5px] border shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white font-bold text-[48px] flex justify-center m-0 hover:bg-white/10 hover:cursor-pointer">
+                                    <p>Press!</p>
+                                </button>
+                            </div>
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-1 min-[905px]:row-start-1 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Animal"
                                 type="text"
                                 onChange={ (event) => setAnimalInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-1 min-[905px]:row-start-2 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Name"
                                 type="text"
                                 onChange={ (event) => setNameInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-1 min-[905px]:row-start-3 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Food"
                                 type="text"
                                 onChange={ (event) => setFoodInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-1 min-[905px]:row-start-4 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Toy"
                                 type="text"
                                 onChange={ (event) => setToyInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-1 min-[905px]:row-start-5 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Age"
                                 type="text"
                                 onChange={ (event) => setAgeInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-2 min-[905px]:row-start-1 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Animal"
                                 type="text"
                                 onChange={ (event) => setAnimal2Input(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-2 min-[905px]:row-start-2 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Name"
                                 type="text"
                                 onChange={ (event) => setName2Input(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-2 min-[905px]:row-start-3 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Food"
                                 type="text"
                                 onChange={ (event) => setFood2Input(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-2 min-[905px]:row-start-4 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Toy"
                                 type="text"
                                 onChange={ (event) => setToy2Input(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[905px]:col-start-2 min-[905px]:row-start-5 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Age"
                                 type="text"
                                 onChange={ (event) => setAge2Input(event.target.value) }
