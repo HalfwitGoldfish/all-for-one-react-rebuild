@@ -81,25 +81,25 @@ const MadLib = () =>
                                 onChange={ (event) => setFoodInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-2 min-[905px]:col-start-1 min-[1220px]:row-start-1 max-[905px]:row-start-4 min-[1220px]:w-[277px] min-[905px]:w-auto min-[905px]:mr-[10px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-2 min-[905px]:col-start-1 min-[1220px]:row-start-1 max-[905px]:row-start-4 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Toy"
                                 type="text"
                                 onChange={ (event) => setToyInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-2 min-[905px]:col-start-1 min-[1220px]:row-start-2 max-[905px]:row-start-5 min-[1220px]:w-[277px] min-[905px]:w-auto min-[905px]:mr-[10px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-2 min-[905px]:col-start-1 min-[1220px]:row-start-2 max-[905px]:row-start-5 min-[905px]:w-auto min-[905px]:mr-[10px]"
                                 placeholder="Input Age"
                                 type="text"
                                 onChange={ (event) => setAgeInput(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-3 min-[905px]:col-start-2 min-[905px]:row-start-1 min-[1220px]:w-[277px] min-[905px]:w-auto min-[905px]:ml-[10px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-3 min-[905px]:col-start-2 min-[905px]:row-start-1 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Animal"
                                 type="text"
                                 onChange={ (event) => setAnimal2Input(event.target.value) }
                             />
                             <input
-                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-3 min-[905px]:col-start-2 min-[905px]:row-start-2 min-[1220px]:w-[277px] min-[905px]:w-auto min-[905px]:ml-[10px]"
+                                className="w-[277px] h-[70px] placeholder:font-bold text-center bg-black/60 border rounded-[5px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white text-[20px] min-[1220px]:col-start-3 min-[905px]:col-start-2 min-[905px]:row-start-2 min-[905px]:w-auto min-[905px]:ml-[10px]"
                                 placeholder="Input Second Name"
                                 type="text"
                                 onChange={ (event) => setName2Input(event.target.value) }
