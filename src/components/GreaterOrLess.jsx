@@ -38,7 +38,7 @@ const GreaterOrLess = () =>
                     </div>
                 </div>
 
-                <div className="row-start-5 flex justify-center max-[905px]:row-start-4">
+                <div className="row-start-4 flex justify-center max-[905px]:row-start-3">
                     <div className={`text-white bg-black/60 w-[277px] h-[150px] border rounded-[5px] ml-[10px] shadow-[0px_0px_0.2em_0px_rgba(0,0,0)] shadow-white m-0 overflow-y-auto ${condition ? "hidden" : ""}`}>
                         <div className="font-bold text-[20px] text-center mt-[15px] flex justify-center">
                             <p className="m-[10px]">{boxText}</p>
